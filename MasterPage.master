@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    	<!--Stylesheets-->
+	<link rel="stylesheet" href="css/style.css" type="text/css"  media="all" />
+	<link rel="stylesheet" href="css/colour.css" type="text/css"  media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css"  media="all" />
+	<link rel="stylesheet" href="css/superfish.css" type="text/css"  media="all" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css"  media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'/>
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="favicon.html" type="image/x-icon" />
+
+	<!--JavaScript-->
+	<script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type='text/javascript' src="ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/tinynav.min.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="js/selectivizr-min.js"></script>
+	<![endif]-->
+
+<!-- END head -->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="top" class="loading">
+    <form id="form1" runat="server">
+    
+            <!-- BEGIN #header-wrapper -->
+	<div id="header-wrapper">
+		
+		<!-- BEGIN #header-border -->
+		<div id="header-border">
+		
+			<!-- BEGIN #header-top -->
+			<div id="header-top" class="clearfix">
+			
+				<ul class="top-right-nav clearfix" id="test" runat="server">
+					<li><a href="Regesation.aspx">Registration</a><span>/</span></li>
+					<li><a href="login.aspx">Login</a></li>
+				</ul>
+			<%--<ul class="top-right-nav clearfix" id="test1" runat="server">
+					<li><a href="#"></a><span><asp:Label ID="lbluser" runat="server"></asp:Label></span></li>
+					<li><a href="login.aspx"><asp:LinkButton ID="lnkbut" runat="server" Text="Log Out" OnClick="lnkbut_Click"></asp:LinkButton></a></li>
+				</ul>--%>
+			
+                
+			<!-- END #header-top -->
+			</div>
+			
+			<!-- BEGIN #header-content-wrapper -->
+			<div id="header-content-wrapper" class="clearfix">
+			
+				<div id="logo">
+					<h1><a href="Default.aspx"><span>Solution</span>360</a></h1>
+				</div>
+			
+				<ul class="social-icons clearfix">	
+					<li><a target="_blank" href="https://twitter.com/"><span class="twitter-icon"></span></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/"><span class="facebook-icon"></span></a></li>
+					<li><a target="_blank" href="https://plus.google.com"><span class="gplus-icon"></span></a></li>
+					<%--<li><a target="_blank" href="#"><span class="pinterest-icon"></span></a></li>--%>
+					<%--<li><a target="_blank" href="#"><span class="flickr-icon"></span></a></li>--%>
+					<li><a target="_blank" href="https://www.youtube.com/"><span class="youtube-icon"></span></a></li>
+					<%--<li><a target="_blank" href="#"><span class="vimeo-icon"></span></a></li>--%>
+					<li><a target="_blank" href="http://www.skype.com/en/"><span class="skype-icon"></span></a></li>
+					<%--<li><a target="_blank" href="#"><span class="rss-icon"></span></a></li>--%>
+				</ul>
+			
+			<!-- END #header-content-wrapper -->
+			</div>
+		
+			<!-- BEGIN #main-menu-wrapper -->
+			<div id="main-menu-wrapper" class="clearfix">
+		
+				<!-- BEGIN #main-menu -->
+				<ul id="main-menu">
+					
+					<li class="current_page_item"><a href="Default.aspx">Home</a></li>
+					<li><a href="Techpost.aspx">Techpost</a></li>
+					<li><a href="Artical.aspx">Artical</a></li>
+							
+						
+					
+					<li><a href="Document.aspx">Documents</a></li>
+					<li><a href="Video.aspx">Videos</a>
+						
+					</li>
+					<li><a href="contact.aspx">Contact Us</a></li>
+					
+				<!-- END #main-menu -->
+				</ul>
+		
+				<%--<div class="menu-search-button"></div>
+				<div method="get" action="#" class="menu-search-form">
+					<input class="menu-search-field" type="text" onblur="if(this.value=='')this.value='To search, type and hit enter';" onfocus="if(this.value=='To search, type and hit enter')this.value='';" value="To search, type and hit enter" name="s" />
+				</div>--%>
+		
+			<!-- END #main-menu-wrapper -->
+			</div>
+		
+		<!-- END #header-border -->
+		</div>
+	
+	<!-- END #header-wrapper -->
+	</div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        
+        </asp:ContentPlaceHolder>
+        <!-- BEGIN #footer-wrapper -->
+	<!-- BEGIN #footer-wrapper -->
+	<div id="footer-wrapper">
+		
+		<!-- BEGIN #footer -->
+		<div id="footer">
+			
+			<ul class="columns-4 clearfix">
+				
+				<li class="col">
+					<div class="widget-title clearfix">
+						<h4>About Us</h4>
+						<div class="widget-title-block">
+						</div>
+					</div>
+                   
+					<ul id="Ul1">
+                        <li style="color:white;"><a target="_blank" href="http://www.codeproject.com/">WWW.codeproject.com</a></li>
+                        <li style="color:white;"><a target="_blank" href="http://www.w3schools.com/">WWW.w3schools.com</a></li>
+	
+					</ul>
+				</li>
+				
+				<li class="col">
+					<div class="widget-title clearfix">
+						<h4>General</h4>
+						<div class="widget-title-block"></div>
+					</div>
+					
+					<ul id="Ul2">
+                        <li style="color:white;"><a href="Techpost.aspx">TechPost</a></li>
+                        <li style="color:white;"><a href="Artical.aspx">Artical</a> </li>
+                        <li style="color:white;"><a href="Document.aspx">Document</a> </li>
+                        <li style="color:white;"><a href="Video.aspx">Video</a></li>
+					</ul>
+					
+				</li>
+				
+				<%--<li class="col">
+					<div class="widget-title clearfix">
+						<h4>Newsletter</h4>
+						<div class="widget-title-block"></div>
+					</div>
+		
+					<ul id="Ul2">
+                        <li>
+                            <asp:TextBox ID="new_lter" runat="server" Height="29px" Width="150px"></asp:TextBox><br /><br />
+                            <asp:Button ID="but" runat="server" Text="Subscribe" OnClick="but_Click" />
+                        </li>
+					</ul>
+					
+					<script type="text/javascript" src="../../twitter.com/javascripts/blogger.html"></script>
+					<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/quitenicestuff.json?callback=twitterCallback2&amp;count=2"></script>
+					
+				</li>--%>
+				
+				<li class="col">
+					<div class="widget-title clearfix">
+						<h4>Recent Place</h4>
+						<div class="widget-title-block"></div>
+					</div>
+					
+					<ul id="Ul3">
+                        <li style="color:white;">"Shajanand",<br />
+                            Near : Mandvi Chowk,<br />
+                            Opp : Town Hall,<br />
+                            Gondal : 360311
+                        </li>
+					</ul>
+					
+				</li>
+			
+			</ul>
+			
+			<div id="footer-bottom" class="clearfix">
+				<p class="fl">&copy; Copyright - <a href="Default.aspx">Solution 360</a> 
+				<p class="go-up fr"><a href="#top" class="scrollup">Top</a></p>
+			</div>
+			
+		<!-- END #footer -->
+		</div>
+	
+	<!-- END #footer-wrapper -->
+	</div>
+
+    </form>
+</body>
+</html>
