@@ -1,0 +1,1 @@
+Solution 360 is an application that connects students, experts, and reviewers who are looking for a solution to a technological problem. It allows users to submit queries 24 hours a day, seven days a week, and receive quick results.
